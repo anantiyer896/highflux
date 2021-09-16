@@ -1,20 +1,21 @@
 .hero-banner{
-height: 2.7vh; 
+height: 22vh; 
+width: 35vw;
 display: block;
 align-items: center;
 margin: auto;
-
+margin-top: 28vh;
 justify-content: center;
 }
 @media only screen and (max-width: 680px) {
     .hero-banner{
-        height: 2rem;
+        height: 6rem;
         margin-top: 30vh;
     }
 }
 
 
-/* things to do with the HighFlix logo
+/* things to do with the HighFlux logo
 
 1. bring to center
 2. increase the size

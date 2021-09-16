@@ -27,7 +27,7 @@
 .home{
   background-image: url("./images/background.png") ;
   height: 100vh;
-    overflow: hidden;
+    overflow: auto;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;

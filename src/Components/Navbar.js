@@ -9,9 +9,17 @@ export default function Navbar() {
             <nav className="navbar" >
                 <ul className="navbarContent">
                     
-                        <li type="none" className="items"><a href="#" className="nav-items" style={{"textDecoration":"none", 'padding': '0.5rem'}}>Home</a></li>
+                        <li type="none" className="items"><a href="./" 
+                        className="nav-items" 
+                        style={{"textDecoration":"none", 'padding': '0.5rem'}}>
+                            Home
+                        </a></li>
                     
-                        <li type="none" className="items"><a href="#" className="nav-items" style={{"textDecoration":"none", 'padding': '0.5rem'}}>Dashboard</a></li>
+                        <li type="none" className="items"><a href="./dashboard" 
+                        className="nav-items" 
+                        style={{"textDecoration":"none",'padding': '0.5rem'}}>
+                            Dashboard
+                        </a></li>
                     
                     
                 </ul>
