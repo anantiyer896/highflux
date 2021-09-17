@@ -1,15 +1,25 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import Home from './Components/Home';
+import Dashboard from './Components/Dashboard';
+import ErrorPage from './Components/ErrorPage';
 import reportWebVitals from './reportWebVitals';
+import {Route, BrowserRouter, Switch} from "react-router-dom"
 
 ReactDOM.render(
 
-  <React.StrictMode>
-    
-    <App/>
-  </React.StrictMode>,
+  <BrowserRouter  >
+    <div >
+      <div className="home">
+        <Switch>
+       <Route exact path="/" component={Home} />
+       <Route exact path="/dashboard" component={Dashboard} />
+       <Route component={ErrorPage} status={404} />
+       </Switch>
+      </div>
+    </div>
+    </BrowserRouter>,
   document.getElementById('root')
 );
 

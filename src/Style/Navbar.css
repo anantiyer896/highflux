@@ -11,23 +11,27 @@
     align-self: flex-end;
     flex-grow: 1; 
     text-decoration: none;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     font-weight: 600;
     padding: 1vh 1vw;
     margin: 1vh 1vw;
     background-color: transparent;
     border-radius: 2px;
-    width:7vw;
-    height:4vh;
+    width:8vw;
+    height:5vh;
     transition: 0.5s;
+    text-align: center;
 }
 .items:hover{
     background-color: beige;
+    
 }
 
 .nav-items{
     text-decoration: none;
     color: #ffffff;
+    
+
 }
 .nav-items:hover{
     color: black;
