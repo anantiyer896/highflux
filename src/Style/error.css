@@ -2,7 +2,11 @@
     height:30rem;
     width:30rem;
     margin:auto;
-    padding: 0 25vw ;
+    display: block;
+    z-index: -1;
+    align-items: center;
+    justify-content: center;
+    position: relative;
 }
 .error-page{
     align-content: center;
@@ -16,9 +20,11 @@
 }
 .error-text{
     text-align: center;
-    margin-top: -30vh;
-    margin-left: -5vw;
+    margin: auto;
     color: rgb(235, 89, 21);
+    align-items: center;
+    justify-content: center;
+    
 }
 p{
     margin-top: -3vh;

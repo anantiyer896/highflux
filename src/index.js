@@ -13,10 +13,10 @@ ReactDOM.render(
     <div >
       <div className="home">
         <Switch>
-       <Route exact path="/" component={Home} />
-       <Route exact path="/dashboard" component={Dashboard} />
-       <Route component={ErrorPage} status={404} />
-       </Switch>
+          <Route exact path="/" component={Home} />
+          <Route exact path="/dashboard" component={Dashboard} />
+          <Route component={ErrorPage} status={404} />
+        </Switch>
       </div>
     </div>
     </BrowserRouter>,

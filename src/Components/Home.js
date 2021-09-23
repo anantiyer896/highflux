@@ -7,7 +7,7 @@ import highflux from "../images/highflux.png"
 export default function Home() {
     return (
         <div >
-            <Navbar/>
+            <Navbar page="home"/>
             <img className="hero-banner" src={highflux} />
         </div>
     )
