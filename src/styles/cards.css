@@ -1,0 +1,8 @@
+
+  #scrollableDiv::-webkit-scrollbar-thumb{
+    background: #61707B 0% 0% no-repeat padding-box !important;
+    border-radius: 0.3rem !important;
+    opacity: 1 !important; 
+    outline: none !important;
+  }
+ 

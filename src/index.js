@@ -1,29 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import Home from './Components/Home';
-import Dashboard from './Components/Dashboard';
-import ErrorPage from './Components/ErrorPage';
-import reportWebVitals from './reportWebVitals';
-import {Route, BrowserRouter, Switch} from "react-router-dom"
+import App from './App';
 
 ReactDOM.render(
-
-  <BrowserRouter  >
-    <div >
-      <div className="home">
-        <Switch>
-          <Route exact path="/" component={Home} />
-          <Route exact path="/dashboard" component={Dashboard} />
-          <Route component={ErrorPage} status={404} />
-        </Switch>
-      </div>
-    </div>
-    </BrowserRouter>,
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
   document.getElementById('root')
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+
