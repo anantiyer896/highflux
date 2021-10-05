@@ -15,4 +15,5 @@ code {
 
 html{
   height: fit-content;
+  font-size: calc(1vh + 1vw);
 }

@@ -1,10 +1,10 @@
 import React from 'react'
 import Header from './Header'
 import '../styles/header.css';
-import iris from "../images/Iris.png";
-import medusa from "../images/medusa.png";
-import poseidon from "../images/poseidon.png";
-import zeus from "../images/zeus.png";
+import iris from "../images/Iris_logo.png";
+import medusa from "../images/medusa_logo.png";
+import poseidon from "../images/poseidon_logo.png";
+import zeus from "../images/zeus_logo.png";
 import '../../node_modules/bootstrap/dist/css/bootstrap.min.css'; 
 import {Row, Card} from 'react-bootstrap'
 import Data from "../data/data.json";
@@ -33,8 +33,8 @@ export default function Houses({match}) {
           .map((member, key) => {
             return (
               <Card
-                style={{ width: "18rem", borderRadius:"10px", padding: "0.2rem", color:"white", fontFamily:"Russo One",fontWeight:"400",
-                backgroundColor:(house==="Poseidon")?"#4FC4F7":(house==="Iris")?"#666666":(house==="Medusa")?"#80CF12":"#FC7500" }}
+                style={{ width: "15rem", borderRadius:"10px", padding: "0.2rem", color:"white", fontFamily:"Russo One",fontWeight:"400",
+                backgroundColor:(house==="Poseidon")?"rgba(79,196,247,0.4)":(house==="Iris")?"rgba(102,102,102,0.4)":(house==="Medusa")?"rgba(128,207,18,0.4)":"rgba(252,117,0,0.4)" }}
                 key={key}
                 className="padding mx-3 my-3 shadow-lg d-flex justify-content-center"
               >
@@ -42,15 +42,15 @@ export default function Houses({match}) {
                 
                 <Card.Body>
                   
-                  <Card.Title>{member.name}</Card.Title>
-                  <Card.Subtitle className="mb-2">
+                  <Card.Title style={{fontSize:"1.2rem", fontWeight:"600", fontFamily:"Old English Text MT Regular"}}>{member.name}</Card.Title>
+                  <Card.Subtitle style={{fontSize:"1rem"}} className="mb-2">
                     {member.level}
                   </Card.Subtitle>
-                  <Card.Text>
+                  <Card.Text style={{fontSize:"0.8rem", color:"", fontFamily:"Harrington", fontWeight:"900"}}>
                     From the house of {member.house}, the clan of{" "}
                     {member.subHouse}; Come meet your {member.level}
                   </Card.Text>
-                  <Card.Link style={{"textDecoration":"none"}} href={`mailto:${member.email}`} target="_blank">
+                  <Card.Link style={{"textDecoration":"none", fontSize:"0.85rem", fontWeight:"600"}} href={`mailto:${member.email}`} target="_blank">
                     {member.email}
                   </Card.Link>
                   

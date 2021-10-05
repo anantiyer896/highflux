@@ -1,5 +1,5 @@
 .nav{
-    background-color: rgb(42, 48, 54)
+    background-color: rgb(42, 48, 54, 0.3) !important
 }
 .text-link{
     padding-top: 3vh;
@@ -16,6 +16,11 @@
 .nav-pills > li >a:hover{
     color: #337ab7;
     background-color: #FFFF;
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+    color: #337ab7 !important;
+    border-bottom: 0.2rem solid #337ab7 !important;
+    background-color: transparent !important;
 }
 .nav-pills > li > img{
     height: 5rem;

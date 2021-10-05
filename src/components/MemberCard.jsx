@@ -9,13 +9,15 @@ function MemberCard() {
     const [searchString, setSearchString] = useState(''); 
 
   return (
-    <div className="container" >
-      <div className="input-group">
+    <>
+    <div className="input-group" style={{position:"fixed", width:"100vw", height:"20vh", padding:"0 20vw"}}>
         <input type="text" className="form-inline  d-flex justify-content-center"
-        style={{position:"fixed",fontSize:"1.1rem",color:"#FF8832",  marginTop: "5vh", marginBottom: "15vh", borderRadius:"5px" , marginLeft:"15vw", padding: "1vh 1vw", width:"57vw", opacity:"0.5"}} 
+        style={{position:"fixed",fontSize:"0.9rem",color:"#FF8832",  margin:"5vh auto", borderRadius:"5px", padding: "1vh 1vw", width:"60%", opacity:"0.5"}} 
         placeholder="Find your teammates" onChange={event => setSearchString(event.target.value.toLowerCase())}/>
         
       </div>
+    <div className="container" >
+      
 
       <Row
         className="d-flex justify-content-center"
@@ -32,7 +34,7 @@ function MemberCard() {
           .map((member, key) => {
             return (
               <Card
-                style={{ width: "18rem",borderRadius:"10px", padding: "0.2rem", fontFamily:"Russo One" }}
+                style={{ width: "15.5rem",borderRadius:"10px", padding: "0.2rem", fontFamily:"Russo One" }}
                 key={key}
                 bg="dark"
                 className="col-lg-4 padding mx-3 my-3 shadow-lg"
@@ -41,18 +43,18 @@ function MemberCard() {
                 <Card.ImgOverlay>
                 <Card.Body>
                   
-                  <Card.Title>{member.name}</Card.Title>
-                  <Card.Subtitle className="mb-2 text-muted">
+                  <Card.Title style={{fontSize:"1.2rem", fontWeight:"600", fontFamily:"Old English Text MT Regular"}}>{member.name}</Card.Title>
+                  <Card.Subtitle style={{fontSize:"1rem"}} className="mb-2 ">
                     {member.level}
                   </Card.Subtitle>
-                  <Card.Subtitle className="mb-2 text-muted">
+                  <Card.Subtitle style={{fontSize:"0.9rem", fontWeight:"900"}} className="mb-2">
                     {member.house}{" "}
                   </Card.Subtitle>
-                  <Card.Text>
+                  <Card.Text style={{fontSize:"0.8rem", color:"", fontFamily:"Harrington", fontWeight:"900"}}>
                     From the house of {member.house}, the clan of{" "}
                     {member.subHouse}; Come meet your {member.level}
                   </Card.Text>
-                  <Card.Link style={{"textDecoration":"none", "color":"#FF0078"}} href={`mailto:${member.email}`} target="_blank">
+                  <Card.Link style={{"textDecoration":"none", "color":"#800000", fontSize:"0.85rem", fontWeight:"600"}} href={`mailto:${member.email}`} target="_blank">
                     {member.email}
                   </Card.Link>
                   
@@ -63,6 +65,7 @@ function MemberCard() {
           })}
       </Row>
     </div>
+    </>
   );
 }
 export default MemberCard;

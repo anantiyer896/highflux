@@ -6,6 +6,8 @@ import Home from './pages/Home';
 import Dashboard from './pages/Dashboard';
 import Error_Page from './pages/Error_Page';
 import Houses from './components/Houses';
+import Score from './components/Score';
+import Scoreboard from "./pages/Scoreboard"
 
 
 function App() {
@@ -17,6 +19,8 @@ function App() {
           <Route path="/" exact component={Home} />
           <Route exact path="/dashboard" component={Dashboard} />
           <Route exact path="/houses/:house" component={Houses} />
+          <Route exact path="/scores/:house" component={Score}/>
+          <Route exact path="/scores/" component={Scoreboard}/>
           <Route status={404} component={Error_Page} />
         </Switch>
 
