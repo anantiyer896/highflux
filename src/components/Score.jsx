@@ -18,54 +18,56 @@ export default function Score({match}) {
     const items1 = (house)=>{
         if (house==="Iris")
         return iris_scores1.map((name) =>
-        <Card.Subtitle style={{fontFamily:"Harrington", fontSize:"1.5rem", padding:"2vh 4vw"}}>{name.name}: {name.score}</Card.Subtitle>)
+        <Card.Subtitle style={{letterSpacing:"0.2rem",fontSize:"1rem", padding:"2vh 4vw"}}>{name.name}: {name.score}</Card.Subtitle>)
 
         else if (house==="Medusa")
         return medusa_scores1.map((name) =>
-        <Card.Subtitle style={{fontFamily:"Harrington", fontSize:"1.5rem", padding:"2vh 4vw"}}>{name.name}: {name.score}</Card.Subtitle>)
+        <Card.Subtitle style={{letterSpacing:"0.2rem",fontSize:"1rem", padding:"2vh 4vw"}}>{name.name}: {name.score}</Card.Subtitle>)
 
         else if (house==="Zeus")
         return zeus_scores1.map((name) =>
-        <Card.Subtitle style={{fontFamily:"Harrington", fontSize:"1.5rem", padding:"2vh 4vw"}}>{name.name}: {name.score}</Card.Subtitle>)
+        <Card.Subtitle style={{letterSpacing:"0.2rem",fontSize:"1rem", padding:"2vh 4vw"}}>{name.name}: {name.score}</Card.Subtitle>)
 
         else
         return poseidon_scores1.map((name) =>
-        <Card.Subtitle style={{fontFamily:"Harrington", fontSize:"1.5rem", padding:"2vh 4vw"}}>{name.name}: {name.score}</Card.Subtitle>)
+        <Card.Subtitle style={{letterSpacing:"0.2rem",fontSize:"1rem", padding:"2vh 4vw"}}>{name.name}: {name.score}</Card.Subtitle>)
     } ;
 
     const items2 = (house)=>{
         if (house==="Iris")
         return iris_scores2.map((name) =>
-        <Card.Subtitle style={{fontFamily:"Harrington", fontSize:"1.5rem", padding:"2vh 4vw"}}>{name.name}: {name.score}</Card.Subtitle>)
+        <Card.Subtitle style={{letterSpacing:"0.2rem",fontSize:"1rem", padding:"2vh 4vw"}}>{name.name}: {name.score}</Card.Subtitle>)
 
         else if (house==="Medusa")
         return medusa_scores2.map((name) =>
-        <Card.Subtitle style={{fontFamily:"Harrington", fontSize:"1.5rem", padding:"2vh 4vw"}}>{name.name}: {name.score}</Card.Subtitle>)
+        <Card.Subtitle style={{letterSpacing:"0.2rem",fontSize:"1rem", padding:"2vh 4vw"}}>{name.name}: {name.score}</Card.Subtitle>)
 
         else if (house==="Zeus")
         return zeus_scores2.map((name) =>
-        <Card.Subtitle style={{fontFamily:"Harrington", fontSize:"1.5rem", padding:"2vh 4vw"}}>{name.name}: {name.score}</Card.Subtitle>)
+        <Card.Subtitle style={{letterSpacing:"0.2rem",fontSize:"1rem", padding:"2vh 4vw"}}>{name.name}: {name.score}</Card.Subtitle>)
 
         else
         return poseidon_scores2.map((name) =>
-        <Card.Subtitle style={{fontFamily:"Harrington", fontSize:"1.5rem", padding:"2vh 4vw"}}>{name.name}: {name.score}</Card.Subtitle>)
+        <Card.Subtitle style={{letterSpacing:"0.2rem",fontSize:"1rem", padding:"2vh 4vw"}}>{name.name}: {name.score}</Card.Subtitle>)
     } ;
 
     return (
 
-        <div style={{backgroundImage:`url(${flag_back})`, backgroundSize:"cover", height:"100%"}} className="justify-content-center" >
+        <div  className="justify-content-center" >
             <Header/>
-            <h1 style={{marginTop:"5vh", color:"white", fontFamily:"Stalemate", fontSize:"5rem"}}>{house} Scoreboard</h1>
-        <Row className="d-lg-flex justify-content-center" style={{padding:"5vh 0 7vh 0", marginBottom:"3vh", marginTop:"2vh", overflowY:"scroll", height:"60vh", width:"100vw"}}>
+            <h1 style={{marginTop:"5vh", color:"white", fontFamily:"Stalemate", fontSize:"3.5rem"}}>{house} Scoreboard</h1>
+            <h1 style={{ color:"white", fontWeight:"400", fontSize:"1.3rem"}}>Total Score: 0</h1>
+            <h1 style={{color:"white",  fontSize:"1.3rem", fontWeight:"400"}}>Rank: NA</h1>
+        <Row className="d-lg-flex justify-content-center" style={{padding:"5vh 0 7vh 0", marginBottom:"2vh", overflowX:"hidden" , overflowY:"auto", height:"57vh", width:"100vw"}}>
             <Card className="padding mx-3 my-3 shadow-lg d-flex justify-content-center"
              style={{ width: "20rem", borderRadius:"10px", padding: "0.2rem", color:"white", fontFamily:"Russo One",fontWeight:"400",
-             backgroundColor:(house==="Poseidon")?"rgba(79,196,247,0.4)":(house==="Iris")?"rgba(102,102,102,0.4)":(house==="Medusa")?"rgba(128,207,18,0.4)":"rgba(252,117,0,0.4)" }}>
+             backgroundColor:(house==="Poseidon")?"rgba(79,196,247,0.4)":(house==="Iris")?"rgba(102,102,102,0.4)":(house==="Medusa")?"rgba(128,207,18,0.4)":"rgba(252,117,0,0.4)", backdropFilter: "blur(10px)" }}>
                {items1(house)}
 
              </Card>
             <Card className="padding mx-3 my-3 shadow-lg d-flex justify-content-center"
             style={{ width: "20rem", borderRadius:"10px", padding: "0.2rem", color:"white", fontFamily:"Russo One",fontWeight:"400",
-            backgroundColor:(house==="Poseidon")?"rgba(79,196,247,0.4)":(house==="Iris")?"rgba(102,102,102,0.4)":(house==="Medusa")?"rgba(128,207,18,0.4)":"rgba(252,117,0,0.4)" }}>
+            backgroundColor:(house==="Poseidon")?"rgba(79,196,247,0.4)":(house==="Iris")?"rgba(102,102,102,0.4)":(house==="Medusa")?"rgba(128,207,18,0.4)":"rgba(252,117,0,0.4)", backdropFilter: "blur(10px)" }}>
                 {items2(house)}
             </Card>
         </Row>

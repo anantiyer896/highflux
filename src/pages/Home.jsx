@@ -10,6 +10,7 @@ import zeus from "../images/zeus.png";
 import zeus_logo from "../images/zeus_logo.png"
 import Hf from '../images/hf.png';
 import {Link} from "react-router-dom";
+import highflux from "../images/Highflux.png"
 
 // CSS imports
 import '../styles/header.css'; 
@@ -44,17 +45,15 @@ function Home() {
         <div style={{minHeight: "100vh", overflow:"hidden"}}>
             <Header/>
             <div className="d-flex justify-content-center" style={{margin:"0 auto"}}>
-                <img src={Hf} style={{marginBottom:"0", marginTop:"2vh"}} className="hero-img" alt="loading error" />
+                <img src={Hf} style={{marginBottom:"2vh", marginTop:"2vh"}} className="hero-img" alt="loading error" />
             </div>
             <div className="d-flex justify-content-center">
-                <h2 className="display-1 text-light" style={{fontFamily: 'Stalemate', fontSize:"4rem", marginBottom:"2vh"}}>House of Heroes</h2>
+                <img src={highflux} style={{marginBottom:"2vh", marginTop:"2vh", height:"4rem", width:"30rem"}} alt="loading error"/>
             </div>
-            <div className="d-lg-flex justify-content-center">
-            <img  style={{margin:"0.5vh 2vw",  height:"5.5rem", width:"5.5rem"}} src={iris_logo}  />
-            <img  style={{margin:"0.5vh 2vw",  height:"5.5rem", width:"5.5rem"}} src={medusa_logo}  />
-            <img  style={{margin:"0.5vh 2vw",  height:"5.5rem", width:"5.5rem"}} src={zeus_logo}  />
-            <img  style={{margin:"0.5vh 2vw",  height:"5.5rem", width:"5.5rem"}} src={poseidon_logo}  />
+            <div className="d-flex justify-content-center">
+                <h2 className="display-1 text-light" style={{fontFamily: 'Stalemate', fontSize:"3.5rem", marginBottom:"2vh", opacity:"80%"}}>House of Heroes</h2>
             </div>
+            
             {/*
             <div className="d-lg-flex justify-content-center">
                 <ReactCardFlip flipSpeedFrontToBack="2" flipSpeedBackToFront="2" isFlipped={isFlippedIris} flipDirection="horizontal"

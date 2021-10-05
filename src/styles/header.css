@@ -1,5 +1,6 @@
 .nav{
-    background-color: rgb(42, 48, 54, 0.3) !important
+    background-color: rgba(77, 75, 75, 0.158);  
+ backdrop-filter: blur(10px);
 }
 .text-link{
     padding-top: 3vh;
@@ -14,12 +15,12 @@
     transition: 0.2s;
 }
 .nav-pills > li >a:hover{
-    color: #337ab7;
+    color: #b82404;
     background-color: #FFFF;
 }
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link{
-    color: #337ab7 !important;
-    border-bottom: 0.2rem solid #337ab7 !important;
+    color: #b82404    !important;
+    border-bottom: 0.2rem solid #b82404 !important;
     background-color: transparent !important;
 }
 .nav-pills > li > img{

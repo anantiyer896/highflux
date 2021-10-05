@@ -1,0 +1,53 @@
+.iris {
+    margin-bottom:3vh !important;
+    background-color:rgb(50,50,50) !important;
+    border-radius: 8px !important; 
+    border:none !important;
+    color:rgb(243, 236, 236) !important;
+    transition:.4s ease-in-out !important;
+}
+
+.iris:hover{
+    background-color: white !important;
+    color:rgb(50,50,50) !important;
+}
+
+.medusa {
+    margin-bottom:3vh !important;
+    background-color:rgb(20, 66, 6) !important;
+    border-radius: 8px !important; 
+    border:none !important;
+    color:rgb(248, 247, 247) !important;
+    transition:.4s ease-in-out !important;
+}
+.medusa:hover{
+    background-color: white !important;
+    color:rgb(50,50,50) !important;
+}
+
+.zeus {
+    margin-bottom:3vh !important;
+    background-color:rgb(221, 59, 19) !important;
+    border-radius: 8px !important; 
+    border:none !important;
+    color:rgb(248, 241, 241) !important;
+    transition:.4s ease-in-out !important;
+}
+.zeus:hover{
+    background-color: white !important;
+    color:rgb(50,50,50) !important;
+}
+
+.poseidon {
+    margin-bottom:3vh !important;
+    background-color:rgb(17, 6, 66) !important;
+    border-radius: 8px !important; 
+    border:none !important;
+    color:rgb(253, 252, 252) !important;
+    transition:.4s ease-in-out !important;
+}
+
+.poseidon:hover{
+    background-color: white !important;
+    color:rgb(50,50,50) !important;
+}
