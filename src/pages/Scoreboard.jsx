@@ -61,7 +61,7 @@ export default function Scoreboard() {
                 style={{margin:"2vh 1.5vw", textDecoration:"none", height:"10rem !important"}} >
                     <figure className="houses" onClick={handleClickZeus}>
                         <img style={{margin:"0.5vh 0",  height:"19rem", width:"15rem"}} src={zeus} alt="loading error" />
-                        <figcaption style={{color:"white", fontFamily:"Stalemate", fontWeight:"900", fontSize:"3rem"}}>Zeus</figcaption>
+                        <figcaption style={{color:"white", fontFamily:"Stalemate", fontSize:"3rem"}}>Zeus</figcaption>
                     </figure>
                     <div style={{height:"19rem", width:"15rem", margin:"5vh auto 10vh auto", background:"rgba(202, 85, 56,0.4)", backdropFilter: "blur(10px)", color:"white", padding:"40% 3vw"}} onClick={handleClickZeus}>
                         <Button className="zeus" ><Link to="/scores/Zeus" style={{textDecoration:"none", color:"inherit", fontFamily:"Romanus"}}>Check Scores</Link></Button>
