@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from '../components/Header';
 import Hf from '../images/hf.png';
-import highflux from "../images/Highflux.png"
+import highflux from "../images/HighFlux.png"
 
 // CSS imports
 import '../styles/header.css'; 
@@ -38,7 +38,7 @@ function Home() {
                 <img src={Hf} style={{marginBottom:"2vh", marginTop:"2vh"}} className="hero-img" alt="loading error" />
             </div>
             <div className="d-flex justify-content-center">
-                <img src={highflux} style={{marginBottom:"2vh", marginTop:"2vh", height:"4rem", width:"30rem"}} alt="loading error"/>
+                <img src={highflux}  style={{marginBottom:"2vh", marginTop:"2vh", height:"4rem", width:"25rem"}} alt="loading error"/>
             </div>
             <div className="d-flex justify-content-center">
                 <h2 className="display-1 text-light" style={{fontFamily: 'Stalemate', fontSize:"3.5rem", marginBottom:"2vh", opacity:"80%"}}>House of Heroes</h2>

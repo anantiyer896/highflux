@@ -1,0 +1,23 @@
+h2{
+    font-family: Optimus Princeps;
+    font-weight: 400;
+}
+
+.doc_back{
+    background-image: url('../images/web\ bg.jpg');
+    background-size: cover;
+    background-position: center;
+    
+}
+
+h4{
+    font-family: Optimus Princeps;
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+h6{
+    font-weight: 600;
+    font-size: 1.3rem;
+}
