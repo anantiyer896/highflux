@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from '../components/Header';
 import Hf from '../images/hf.png';
-import highflux from "../images/HighFlux.png"
+import highflux from "../images/Highflux.png"
 
 // CSS imports
 import '../styles/header.css'; 
