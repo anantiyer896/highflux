@@ -7,6 +7,7 @@ import "../styles/cards.css"
 function MemberCard() {
 
     const [searchString, setSearchString] = useState(''); 
+    console.log(Data)
 
   return (
     <>
@@ -26,15 +27,17 @@ function MemberCard() {
       >
         {Data
           .filter(member => {
+              
               return (
                 member.name.toLowerCase().match(searchString) ||
-                member.house.toLowerCase().match(searchString)
+                member.house.toLowerCase().match(searchString)  ||
+                member.empId.match(searchString)
               );
           })
           .map((member, key) => {
             return (
               <Card
-                style={{ width: "15.5rem",borderRadius:"10px", padding: "0.2rem", fontFamily:"Russo One" }}
+                style={{ width: "15.5rem",borderRadius:"10px", padding: "0.2rem", fontFamily:"Russo One", height:"fit-content" }}
                 key={key}
                 bg="dark"
                 className="col-lg-4 padding mx-3 my-3 shadow-lg"

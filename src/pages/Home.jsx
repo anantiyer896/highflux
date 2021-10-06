@@ -1,25 +1,15 @@
 import React from 'react';
 import Header from '../components/Header';
-import iris from "../images/Iris.png";
-import iris_logo from "../images/Iris_logo.png"
-import medusa from "../images/medusa.png";
-import medusa_logo from "../images/medusa_logo.png"
-import poseidon from "../images/poseidon.png";
-import poseidon_logo from "../images/poseidon_logo.png"
-import zeus from "../images/zeus.png";
-import zeus_logo from "../images/zeus_logo.png"
 import Hf from '../images/hf.png';
-import {Link} from "react-router-dom";
 import highflux from "../images/Highflux.png"
 
 // CSS imports
 import '../styles/header.css'; 
 import '../styles/home.css'
 import '../../node_modules/bootstrap/dist/css/bootstrap.min.css'; 
-import ReactCardFlip from 'react-card-flip';
 
 function Home() {
-    
+    /*
     const [isFlippedIris, setIsFlippedIris] = React.useState(false)
     const [isFlippedMedusa, setIsFlippedMedusa] = React.useState(false)
     const [isFlippedPoseidon, setIsFlippedPoseidon] = React.useState(false)
@@ -39,7 +29,7 @@ function Home() {
       const handleClickZeus = (e)=> {
         e.preventDefault();
         setIsFlippedZeus(!isFlippedZeus);
-      }
+      }*/
 
     return (
         <div style={{minHeight: "100vh", overflow:"hidden"}}>

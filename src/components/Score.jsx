@@ -1,7 +1,6 @@
 import React from 'react'
 import {Card, Row} from "react-bootstrap"
 import Header from './Header'
-import flag_back from "../images/flag_back.jpg"
 
 export default function Score({match}) {
 
