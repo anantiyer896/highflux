@@ -9,7 +9,11 @@ h2{
     background-position: center;
     
 }
-
+@media only screen and (max-width: 800px) {
+    .doc_back {
+      background-size: contain;
+    }
+  }
 h4{
     font-family: Optimus Princeps;
     text-transform: uppercase;
