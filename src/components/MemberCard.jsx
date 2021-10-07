@@ -37,7 +37,7 @@ function MemberCard() {
           .map((member, key) => {
             return (
               <Card
-                style={{ width: "15.5rem",borderRadius:"10px", padding: "0.2rem", fontFamily:"Russo One", height:"fit-content" }}
+                style={{ width: "16rem",borderRadius:"10px", padding: "0.2rem", fontFamily:"Russo One", height:"fit-content" }}
                 key={key}
                 bg="dark"
                 className="col-lg-4 padding mx-3 my-3 shadow-lg"

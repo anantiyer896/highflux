@@ -9,7 +9,7 @@ export default function About() {
         <div style={{color:"#343434"}}>
             <Header/>
             <div className="justify-content-start doc_back" style={{width:"100vw", height:"86.2vh", fontFamily:"Montserrat", fontWeight:"500"}}>
-                <div style={{padding:"5vh 5vw",  overflowY:"scroll", height:"86vh", width:"98vw"}}>
+                <div style={{padding:"5vh 5vw",  overflowY:"scroll", height:"86.5vh", width:"98vw"}}>
                 <h2>THE HIGHFLUX VADE MECUM</h2><br/>
                 <p style={{textAlign:"justify"}}>
                     Welcome to the realm of warriors; where fortunes are decided, where battles are fought for glory and where victory is coveted by all. Beset on all four sides by honourable armies vigorously contending for the enviable “Helm of Kronos”, the crusade is about to begin. 

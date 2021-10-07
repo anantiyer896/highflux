@@ -19,7 +19,7 @@ function App() {
         <Switch>
           <Route path="/" exact component={Home} />
           <Route exact path="/dashboard" component={Dashboard} />
-          <Route exact path="/houses/:house" component={Houses} />
+          <Route exact path="/scores/houses/:house" component={Houses} />
           <Route exact path="/scores/:house" component={Score}/>
           <Route exact path="/scores/" component={Scoreboard}/>
           <Route exact path="/about" component={About} />

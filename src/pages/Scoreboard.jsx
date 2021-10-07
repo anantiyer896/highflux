@@ -43,7 +43,7 @@ export default function Scoreboard() {
                     </figure >
                     <div style={{height:"19rem", width:"15rem", margin:"5vh auto 10vh auto", background:"rgba(102,102,102,0.7)", backdropFilter: "blur(10px)", color:"white", padding:"40% 3vw"}} onClick={handleClickIris}>
                         <Button className="iris"><Link to="/scores/Iris" style={{textDecoration:"none", color:"inherit", fontFamily:"Romanus"}}>Check Scores</Link><br/></Button>
-                        <Button className="iris"><Link to="/houses/Iris" style={{textDecoration:"none", color:"inherit", fontFamily:"Romanus"}} className="houses">See your Members</Link></Button>
+                        <Button className="iris"><Link to="scores/houses/Iris" style={{textDecoration:"none", color:"inherit", fontFamily:"Romanus"}} className="houses">See your Members</Link></Button>
                     </div>
                 </ReactCardFlip>
                 <ReactCardFlip flipSpeedFrontToBack="2" flipSpeedBackToFront="2" isFlipped={isFlippedMedusa} flipDirection="horizontal"
@@ -54,7 +54,7 @@ export default function Scoreboard() {
                     </figure>
                     <div style={{height:"19rem", width:"15rem", margin:"5vh auto 10vh auto", background:"rgba(128,207,18,0.4)", backdropFilter: "blur(10px)", color:"white", padding:"40% 3vw"}} onClick={handleClickMedusa}>
                         <Button className="medusa" ><Link to="/scores/Medusa" style={{textDecoration:"none", color:"inherit", fontFamily:"Romanus"}}>Check Scores</Link></Button>
-                        <Button className="medusa"><Link to="/houses/Medusa" style={{textDecoration:"none", color:"inherit", fontFamily:"Romanus"}} className="houses">See your Members</Link></Button>
+                        <Button className="medusa"><Link to="scores/houses/Medusa" style={{textDecoration:"none", color:"inherit", fontFamily:"Romanus"}} className="houses">See your Members</Link></Button>
                     </div>
                 </ReactCardFlip>
                 <ReactCardFlip flipSpeedFrontToBack="2" flipSpeedBackToFront="2" isFlipped={isFlippedZeus} flipDirection="horizontal"
@@ -65,7 +65,7 @@ export default function Scoreboard() {
                     </figure>
                     <div style={{height:"19rem", width:"15rem", margin:"5vh auto 10vh auto", background:"rgba(202, 85, 56,0.4)", backdropFilter: "blur(10px)", color:"white", padding:"40% 3vw"}} onClick={handleClickZeus}>
                         <Button className="zeus" ><Link to="/scores/Zeus" style={{textDecoration:"none", color:"inherit", fontFamily:"Romanus"}}>Check Scores</Link></Button>
-                        <Button className="zeus"><Link to="/houses/Zeus" style={{textDecoration:"none", color:"inherit", fontFamily:"Romanus"}} className="houses">See your Members</Link></Button>
+                        <Button className="zeus"><Link to="scores/houses/Zeus" style={{textDecoration:"none", color:"inherit", fontFamily:"Romanus"}} className="houses">See your Members</Link></Button>
                     </div>
                 </ReactCardFlip>
                 <ReactCardFlip flipSpeedFrontToBack="2" flipSpeedBackToFront="2" isFlipped={isFlippedPoseidon} flipDirection="horizontal"
@@ -76,7 +76,7 @@ export default function Scoreboard() {
                     </figure>
                     <div style={{height:"19rem", width:"15rem", margin:"5vh auto 10vh auto", background:"rgba(79,196,247,0.4)", backdropFilter: "blur(10px)", color:"white", padding:"40% 3vw"}} onClick={handleClickPoseidon}>
                         <Button className="poseidon"><Link to="/scores/Poseidon" style={{textDecoration:"none", color:"inherit", fontFamily:"Romanus"}}>Check Scores</Link></Button>
-                        <Button className="poseidon"><Link to="/houses/Poseidon" style={{textDecoration:"none", color:"inherit", fontFamily:"Romanus"}} className="houses">See your Members</Link></Button>
+                        <Button className="poseidon"><Link to="scores/houses/Poseidon" style={{textDecoration:"none", color:"inherit", fontFamily:"Romanus"}} className="houses">See your Members</Link></Button>
                     </div>
                 </ReactCardFlip>
             </div>

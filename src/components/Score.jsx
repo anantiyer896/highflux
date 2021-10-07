@@ -54,18 +54,18 @@ export default function Score({match}) {
 
         <div  className="justify-content-center" >
             <Header/>
-            <h1 style={{marginTop:"5vh", color:"white", fontFamily:"Stalemate", fontSize:"3.5rem"}}>{house} Scoreboard</h1>
+            <h1 style={{marginTop:"2vh", color:"white", fontFamily:"Stalemate", fontSize:"3.4rem"}}>{house} Scoreboard</h1>
             <h1 style={{ color:"white", fontWeight:"400", fontSize:"1.3rem"}}>Total Score: 0</h1>
             <h1 style={{color:"white",  fontSize:"1.3rem", fontWeight:"400"}}>Rank: NA</h1>
-        <Row className="d-lg-flex justify-content-center" style={{padding:"5vh 0 7vh 0", marginBottom:"2vh", overflowX:"hidden" , overflowY:"auto", height:"57vh", width:"100vw"}}>
+        <Row className="d-lg-flex justify-content-center" style={{padding:"2vh 0 2vh 0", marginBottom:"1vh", overflowX:"hidden" , overflowY:"auto", height:"55vh", width:"100vw"}}>
             <Card className="padding mx-3 my-3 shadow-lg d-flex justify-content-center"
-             style={{ width: "20rem", borderRadius:"10px", padding: "0.2rem", color:"white", fontFamily:"Russo One",fontWeight:"400",
+             style={{ width: "18rem", borderRadius:"10px", padding: "0.5vh 0.5vw", color:"white", fontFamily:"Russo One",fontWeight:"400",
              backgroundColor:(house==="Poseidon")?"rgba(79,196,247,0.4)":(house==="Iris")?"rgba(102,102,102,0.4)":(house==="Medusa")?"rgba(128,207,18,0.4)":"rgba(252,117,0,0.4)", backdropFilter: "blur(10px)" }}>
                {items1(house)}
 
              </Card>
             <Card className="padding mx-3 my-3 shadow-lg d-flex justify-content-center"
-            style={{ width: "20rem", borderRadius:"10px", padding: "0.2rem", color:"white", fontFamily:"Russo One",fontWeight:"400",
+            style={{ width: "18rem", borderRadius:"10px", padding: "0.5vh 0.5vw", color:"white", fontFamily:"Russo One",fontWeight:"400",
             backgroundColor:(house==="Poseidon")?"rgba(79,196,247,0.4)":(house==="Iris")?"rgba(102,102,102,0.4)":(house==="Medusa")?"rgba(128,207,18,0.4)":"rgba(252,117,0,0.4)", backdropFilter: "blur(10px)" }}>
                 {items2(house)}
             </Card>
